@@ -88,9 +88,33 @@ section h3 {
 }
 
 .participants-list {
-  margin: 8px 0 0 18px;
+  margin: 8px 0 0 0;
   padding-left: 0;
-  list-style-type: disc;
+  list-style: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-participant {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.1em;
+  opacity: 0.7;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.delete-participant:hover {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .participants-section.empty {
